@@ -1,6 +1,6 @@
 const tableBodyObj = document.getElementById("tableBody");
 
-fetch("https://api.github.com/users/suly98")
+fetch("https://api.github.com/users/NouraSaid")
 .then((response) => {return response.json();})
 .then((jsonRes) => {
   Object.keys(jsonRes).forEach((attribName) => {
@@ -19,7 +19,7 @@ fetch("https://api.github.com/users/suly98")
   });
 })
 .then(() => {console.log("I am done!");})
-.catch((errMsg) => {console.log(`Error Message: ${errMsg}.`);});
+.catch((errMsg) => {console.log(`Error Message: ${errMsg}.`)});
 
 
 
